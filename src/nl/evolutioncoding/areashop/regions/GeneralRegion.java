@@ -1028,8 +1028,10 @@ public abstract class GeneralRegion {
 								uuid = null;
 							}
 							if(uuid != null) {
-								//AreaShop.debug("  Added player by UUID");
-								members.addPlayer(uuid);
+								OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(uuid);
+								if(offlinePlayer != null) {
+									members.addPlayer(offlinePlayer.getName());
+								}
 							}
 						}
 					}
@@ -1062,8 +1064,10 @@ public abstract class GeneralRegion {
 								uuid = null;
 							}
 							if(uuid != null) {
-								//AreaShop.debug("  Added player by UUID");
-								owners.addPlayer(uuid);
+								OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(uuid);
+								if(offlinePlayer != null) {
+									owners.addPlayer(offlinePlayer.getName());
+								}
 							}
 						}
 					}
