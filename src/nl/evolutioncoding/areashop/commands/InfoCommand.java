@@ -390,6 +390,7 @@ public class InfoCommand extends CommandAreaShop {
 		return result;
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Override
 	public List<String> getTabCompleteList(int toComplete, String[] start, CommandSender sender) {
 		List<String> result = new ArrayList<String>();
