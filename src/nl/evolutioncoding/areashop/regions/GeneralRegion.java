@@ -1029,7 +1029,7 @@ public abstract class GeneralRegion {
 							}
 							if(uuid != null) {
 								OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(uuid);
-								if(offlinePlayer != null) {
+								if(offlinePlayer != null && offlinePlayer.getName() != null) {
 									members.addPlayer(offlinePlayer.getName());
 								}
 							}
@@ -1065,7 +1065,7 @@ public abstract class GeneralRegion {
 							}
 							if(uuid != null) {
 								OfflinePlayer offlinePlayer = Bukkit.getOfflinePlayer(uuid);
-								if(offlinePlayer != null) {
+								if(offlinePlayer != null && offlinePlayer.getName() != null) {
 									owners.addPlayer(offlinePlayer.getName());
 								}
 							}
